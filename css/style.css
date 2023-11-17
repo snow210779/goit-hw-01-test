@@ -1,4 +1,60 @@
 body{
     font-family: Roboto, sans-serif;
-    
+    color: #404BBF;
+}
+
+ul,li,h1,h2,h3,h4,h5{
+    list-style-type:none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+
+/*------- HEADER ---------*/
+
+.header-logo{
+        color:#4D5AE5;
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+.header-logo-accent{
+    color:#2E2F42;
+}
+.heder-nav-link{
+        color: #2E2F42;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
+
+/*------- HERO ---------*/
+.hero{
+    background-color: #2E2F42;
+}
+.hero-title{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+}
+.hero-btn{
+        display: inline-flex;
+        padding: 16px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+            background: #4D5AE5;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
 }
