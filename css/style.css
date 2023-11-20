@@ -234,14 +234,24 @@ letter-spacing: 0.02em;
         line-height: 1.5;
         letter-spacing: 0.04em;
         border-radius: 4px;
-            border: 1px solid  #E7E9FC;
+            border: 3px solid  yellowgreen;
             background-color: #F4F4FD;
             cursor: pointer;
+            padding: 12px 24px;
 }
-.portfolio-btn.wite{
+.portfolio-btn:is(:hover, :active){
+    border-color: gold;
+    border-style: dashed;
+    border-radius: 100%;
+}
+.wite{
         color: #FFF;
         background-color:#404BBF;
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+.wite:is(:hover){
+    border-color:silver;
+        
 }
 
 .portfolio-img-title{
@@ -258,6 +268,15 @@ letter-spacing: 0.02em;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
+
+.portfolio-img{
+    border: 10px solid yellow;
+    border-radius: 20px;
+}
+.portfolio-img:is(:hover, :focus){
+    border-radius: 50%;
+}
+
 
 /*todo--PORTFOLIO-FOOTER -----*/
 .portfolio-footer{
@@ -281,4 +300,6 @@ letter-spacing: 0.02em;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        text-indent: 50px;
+        text-shadow: -10px -5px 7px yellow;
 }
