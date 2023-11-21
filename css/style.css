@@ -2,6 +2,20 @@
     --accent-color: #4D5AE5;
     --nav-color: #2E2F42;
 }
+
+p,h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+    ul,ol{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+}
+
+
 body{
     font-family: Roboto, sans-serif;
     color:#434455;
@@ -16,6 +30,13 @@ ul,li,h1,h2,h3,h4,h5{
     text-decoration: none;
 }
 
+.container{
+   width: 100%;
+    max-width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 5px solid gold;
+}
 
 
 /*todo------ HEADER ---------*/
@@ -52,6 +73,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.02em;
+
 }
 .header-social-link:hover,
 .header-social-link:focus {
@@ -184,6 +206,16 @@ letter-spacing: 0.02em;
 }
 
 /*todo-----PORTFOLIO-HEADER -----*/
+.portfolio-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 5px dashed red;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+    
 
 .portfolio-header-logo{
     color: var(--accent-color);
@@ -199,6 +231,11 @@ letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
+.portfolio-header-list{
+    display: flex;
+    gap: 40px;
+}
+
 .portfolio-header-link{
         color: var(--nav-color);
         font-size: 16px;
@@ -209,6 +246,11 @@ letter-spacing: 0.02em;
 }
 .portfolio-header-link:is(:hover, :focus){
     color: #404BBF;
+}
+
+.portfolio-address-list{
+    display: flex;
+    gap: 40px;
 }
 .portfolio-address-link{
         color: #434455;
@@ -224,6 +266,14 @@ letter-spacing: 0.02em;
 
 /*todo--SECTION-PORTFOLIO -----*/
 
+.portfolio-btn-list{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-btn-item{
+    padding-top: 96px;
+    margin-bottom: 72px;
+}
 .portfolio-btn{
         color: #4D5AE5;
         text-align: center;
@@ -244,14 +294,23 @@ letter-spacing: 0.02em;
     border-style: dashed;
     border-radius: 100%;
 }
-.wite{
+.portfolio-btn.wite{
         color: #FFF;
         background-color:#404BBF;
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.wite:is(:hover){
+.portfolio-btn.wite:is(:hover){
     border-color:silver;
-        
+}
+
+.portfolio-img-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.portfolio-img-item{
+    width: calc((100%-48px)/3);
 }
 
 .portfolio-img-title{
