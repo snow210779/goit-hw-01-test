@@ -74,6 +74,21 @@ ul,li,h1,h2,h3,h4,h5{
     gap: 40px;
     
 }
+.header-nav-item{
+    position: relative;
+}
+.header-nav-item.current::after{
+   content: '';
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color:  #404BBF;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+    
+
 .heder-nav-link{
         color: #2E2F42;
         font-size: 16px;
@@ -85,12 +100,18 @@ ul,li,h1,h2,h3,h4,h5{
 .heder-nav-link:focus {
 color: #404BBF;
 }
+.heder-nav-link::after{
+    content: '';
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+        background-color:  #404BBF;
+}
 
 .header-social-list{
     display: flex;
     gap: 40px;
 }
-
 
 .header-social-link{
     color: #434455;
@@ -381,6 +402,42 @@ letter-spacing: 0.02em;
 }
 .portfolio-header-item{
     align-items: center;
+    position: relative;
+}
+.portfolio-header-item.test::before{
+    content: '';
+        width: 15px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404BBF;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+}
+.portfolio-header-item.current-portfolio::after{
+    content: '';
+    width: 66px;
+    height: 4px;
+    border-radius: 2px;
+    background-color:  #404BBF;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+.portfolio-header-item.test_1::after{
+    content:'';
+    width: 4px;
+    height: 10px;
+    border-radius: 2px;
+        background-color: #404BBF;
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+}
+.portfolio-header-item.test_1:hover:after{
+    background-color: black;
 }
 
 .portfolio-header-link{
@@ -463,6 +520,7 @@ letter-spacing: 0.02em;
 }
 .portfolio-img-item{
     flex-basis: calc((100% - 48px) / 3);
+    position: relative;
     
 }
 .img-descripsion{
@@ -492,6 +550,21 @@ letter-spacing: 0.02em;
 }
 .portfolio-img:is(:hover, :focus){
     border-radius: 50%;
+}
+.portfolio-img-cover-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:  #F4F4FD;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        background-color: #4D5AE5;
+        transform: translateY(100%);
+        width: 360px;
+        height: 300px;
+
+
 }
 
 
