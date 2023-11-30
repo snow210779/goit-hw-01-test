@@ -433,19 +433,21 @@ transform: translateY(0);
    fill: #404BBF;
     border: 1px solid #404BBF;
     transform: scale(0.75);
-
 }
-
-
-
-
-
 
 /*todo-------FOOTER-WEB -----*/
 
 .footer-web{
+    max-width: 1440px;
     background-color: #2E2F42;
     padding: 100px 0;
+}
+.footer-web-container{
+    display: flex;
+    align-items: baseline;
+}
+.footer-web-logo-box{
+    margin-right: 120px;
 }
 
 .footer-web-logo {
@@ -470,14 +472,76 @@ transform: translateY(0);
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
-.footer-web-title{
+.footer-web-icons-title{
         color: #fff;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        margin-bottom: 16px;
 }
+.footer-web-icons-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.footer-web-icons-item{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #404BBF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(236, 9, 24),
+            0 0 0 5px rgb(0, 255, 76), 0 0 0 8px rgb(0, 60, 255);
+    transition: background-color 250ms ease, border-radius 250ms ease, box-shadow ;
+}
+.footer-web-icons-item.current-footer-web::after{
+    content: '';
+    height: 4px;
+    width: 42px;
+    right: 0;
+   background-color: gainsboro;
+   position: absolute;
+   bottom: -15px;
+}
+.current-footer-web:first-child::after{
+content: '';
+    height: 44px;
+    width: 4px;
+    left: 0;
+    background-color: rgb(212, 15, 15);
+    position: absolute;
+    margin-left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 250ms ease;
+    
+}
+.footer-web-icons-item.current-footer-web:first-child:hover::after{
+    background-color: #160303;
+    
+}
+
+.footer-web-icons-link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4F4FD;
+    transition: color 250ms ease-in, transform 250ms ease-in;
+}
+.footer-web-icons{
+    fill: currentColor;
+}
+.footer-web-icons-item:hover .footer-web-icons-link{
+    color: yellow;
+    background-color: #31D0AA;
+    border-radius: 30%;
+    transform: scale(0.5);
+    box-shadow: 0 0 0 3px rgb(15, 14, 0),
+            0 0 0 5px gold, 0 0 0 8px red;
+}
+
 
 /*todo-----PORTFOLIO-HEADER -----*/
 .portfolio-header{
