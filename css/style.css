@@ -781,9 +781,17 @@ content: '';
 
 
 /*todo--PORTFOLIO-FOOTER -----*/
+
 .portfolio-footer{
     background-color: #2E2F42;
     padding: 100px 0;
+}
+.portfolio-footer-container{
+    display: flex;
+    justify-content: baseline;
+}
+.portfolio-footer-logo-box{
+    margin-right: 120px;
 }
 .portfolio-footer-logo{
         color: var(--accent-color);
@@ -807,5 +815,65 @@ content: '';
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-shadow: -10px -5px 7px yellow;
-        margin-top: 17px;
+        margin-bottom: 17px;
+}
+
+.portfolio-footer-social-title{
+    color: #E7E9FC;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+.portfolio-footer-social-list{
+    display: flex;
+    gap: 46px;
+
+}
+.portfolio-footer-social-item{
+    position: relative;
+        width: 40px;
+        height: 40px;
+}
+
+.portfolio-footer-social-link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 5px yellow;
+    color: whitesmoke;
+    transition: color 500ms ease, background-color 500ms ease, box-shadow 500ms ease, transform 500ms ease;
+}
+.portfolio-footer-social-icons{
+    fill: currentColor;
+}
+.portfolio-footer-social-item:hover
+.portfolio-footer-social-link{
+     color: #040a00;
+     background-color: goldenrod;
+     box-shadow: 0px 0px 0px 10px darkblue;
+}
+.portfolio-footer-social-item:nth-child(even):hover .portfolio-footer-social-link{
+    transform: scale(1.75);
+}
+.portfolio-footer-social-item:nth-child(odd):hover .portfolio-footer-social-link {
+    transform: scale(0.35);
+}
+
+.portfolio-footer-social-item.current-portfolio-footer::before{
+    content: '';
+    height: 5px;
+    width: 20px;
+    background-color: #0f0101;
+    position: absolute;
+    margin-top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.portfolio-footer-social-item:hover.current-portfolio-footer::before{
+    background-color: #68fc05;
 }
